@@ -1,6 +1,6 @@
 import { supabase } from '../lib/supabase'
 
-const API_URL = 'http://localhost:3000/api/v1/portfolios'
+const API_URL = 'https://asset-performance-tracker.onrender.com/api/v1/portfolios'
 
 const getAccessToken = async () => {
   const {
