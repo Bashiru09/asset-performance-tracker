@@ -6,8 +6,9 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 app.use(cors({
-  origin: 'https://asset-performance-tracker-peach.vercel.app/',
+  origin: 'https://asset-performance-tracker-peach.vercel.app',
 }))
+
 
 app.use(express.json())
 
