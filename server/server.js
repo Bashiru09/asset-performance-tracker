@@ -5,9 +5,17 @@ const cors = require('cors')
 const app = express()
 const PORT = process.env.PORT || 3000
 
+
+
+const allowedOrigins = [
+  "https://asset-performance-tracker-peach.vercel.app",
+  "http://localhost:5173",
+];
+
 app.use(cors({
-  origin: 'https://asset-performance-tracker-peach.vercel.app',
-}))
+  origin: allowedOrigins,
+}));
+
 
 
 app.use(express.json())
